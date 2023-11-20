@@ -82,6 +82,10 @@ GEM
       irb (>= 1.5.0)
       reline (>= 0.3.1)
     diff-lcs (1.5.0)
+    dotenv (2.8.1)
+    dotenv-rails (2.8.1)
+      dotenv (= 2.8.1)
+      railties (>= 3.2)
     erubi (1.12.0)
     execjs (2.9.1)
     ffi (1.16.3)
@@ -172,6 +176,7 @@ GEM
     rake (13.1.0)
     rdoc (6.6.0)
       psych (>= 4.0.0)
+    redis (4.8.1)
     reline (0.4.0)
       io-console (~> 0.5)
     rspec-core (3.12.2)
@@ -239,6 +244,7 @@ DEPENDENCIES
   bootsnap
   bootstrap (~> 5.2)
   debug
+  dotenv-rails
   font-awesome-sass (~> 6.1)
   importmap-rails
   jbuilder
@@ -246,6 +252,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 7.0.8)
   rails-controller-testing
+  redis (~> 4.0)
   rspec-rails
   sassc-rails
   simple_form

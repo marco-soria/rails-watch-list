@@ -1,0 +1,9 @@
+<%= form_with(model: [ @list, @list.reviews.new ], url: list_reviews_path(@list), method: :post) do |form| %>
+  <%= form.label :rating %>
+  <%= form.number_field :rating, in: 1..5 %>
+
+  <%= form.label :content %>
+  <%= form.text_area :content %>
+
+  <%= form.submit 'Add Review' %>
+<% end %>

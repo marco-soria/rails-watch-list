@@ -1,6 +1,4 @@
 class ReviewsController < ApplicationController
-  before_action :set_list, only: [:create]
-
   def create
     @review = Review.new(review_params)
     @list = List.find(params[:list_id])
